@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Cliente</title>
+</head>
+<body>
+    
+
+<label for="nome"> Nome:</label>
+<input id="nome" type="text"/>
+
+
+<label for="cpf">Cpf:</label>
+<input id="cpf" type="text" />
+
+<button id="btncriar" onclick="clienteController.inserir(event)">Criar Cliente </button>
+
+<ul id="listaclientes">
+
+
+</ul>
+
+
+<button id="btnlistar" onclick="clienteController.listarnoHtml()">Listar Clientes</button>
+
+<script src="js/model/conta.js"></script>
+<script src="js/model/conta-bonificada.js"></script>
+<script src="js/model/poupanca.js"></script>
+<script src="js/model/contas.js"></script>
+<script src="js/controller/conta-controller.js"></script>
+<script src="js/model/cliente.js"> </script>
+<script src="js/model/clientes.js"></script>
+<script src="js/controller/cliente-controller.js"></script>
+<script src="js/model/cliente-especial.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
