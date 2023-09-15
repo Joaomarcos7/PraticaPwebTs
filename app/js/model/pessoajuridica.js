@@ -7,6 +7,6 @@ class PessoaJuridica extends Pessoa {
         return this._cnpj;
     }
     ToString() {
-        return `Nome: ${super.nome} ; Idade : ${super.idade}; DataNascimento : ${super.dataNascimento}`;
+        return `Nome: ${super.nome} ; Idade : ${super.idade}; DataNascimento : ${super.dataNascimento};CNPJ: ${this.cnpj}`;
     }
 }
