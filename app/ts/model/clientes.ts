@@ -14,7 +14,9 @@ class Clientes{
 
 
     pesquisar(cpf:string): Cliente{
-        return this._clientes.find(x=>x.cpf===cpf);
+        let cliente = this._clientes.find(x=>x.cpf === cpf);
+        console.log(cliente.ToStringFormat());
+        return cliente;
     }
 
 
@@ -35,10 +37,10 @@ class Clientes{
         return this._clientes;
     }
 
-    ToString() : string {
+    ToStringFormat() : string {
         let string= "";
         this.listar().forEach(cliente=>{
-            string+=cliente.ToString + "\n";
+            string+=cliente.ToStringFormat() + "\n";
         })
         return string;
     }

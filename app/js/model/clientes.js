@@ -7,7 +7,9 @@ class Clientes {
         console.log("cliente inserido!");
     }
     pesquisar(cpf) {
-        return this._clientes.find(x => x.cpf === cpf);
+        let cliente = this._clientes.find(x => x.cpf === cpf);
+        console.log(cliente.ToStringFormat());
+        return cliente;
     }
     remover(cpf) {
         let elemento = this.pesquisar(cpf);
@@ -22,10 +24,10 @@ class Clientes {
     listar() {
         return this._clientes;
     }
-    ToString() {
+    ToStringFormat() {
         let string = "";
         this.listar().forEach(cliente => {
-            string += cliente.ToString + "\n";
+            string += cliente.ToStringFormat() + "\n";
         });
         return string;
     }

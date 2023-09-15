@@ -1,5 +1,5 @@
 class Cliente {
-    constructor(cpf, nome) {
+    constructor(nome, cpf) {
         this._nome = nome;
         this._cpf = cpf;
     }
@@ -21,7 +21,7 @@ class Cliente {
     set conta(conta) {
         this._conta = conta;
     }
-    ToString() {
+    ToStringFormat() {
         let string = `Nome: ${this._nome} ; CPF: ${this._cpf}`;
         return string;
     }

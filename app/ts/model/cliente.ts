@@ -4,7 +4,7 @@ class Cliente{
   private _cpf : string;
   private _conta: Conta;
 
-  constructor(cpf:string, nome:string){
+  constructor(nome:string, cpf:string){
     this._nome=nome;
     this._cpf=cpf;
   }
@@ -37,7 +37,7 @@ set conta(conta:Conta){
 }
 
 
-ToString() : string {
+ToStringFormat() : string {
 
     let string = `Nome: ${this._nome} ; CPF: ${this._cpf}`;
     return string;

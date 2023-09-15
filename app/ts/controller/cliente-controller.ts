@@ -39,7 +39,7 @@ listarnoHtml(){
             this.clientes.remover(cliente.cpf);
         }
       })
-      elemento.textContent= cliente.ToString();
+      elemento.textContent= cliente.ToStringFormat();
       elementoUl.appendChild(elemento);
       elemento.appendChild(btnelemento)
     })
